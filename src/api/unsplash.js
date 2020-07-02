@@ -15,8 +15,7 @@ export default () => {
         },
       });
       const jsonify = await response.json();
-      console.log(jsonify.results.length);
-      setResults(jsonify);
+      setResults(jsonify.results);
     } catch (err) {
       setErrorMessage('Something went wrong');
     }

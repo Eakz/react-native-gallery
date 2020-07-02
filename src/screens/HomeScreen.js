@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import {Text, StyleSheet, View} from 'react-native';
 import SearchBar from '../components/SearchBar';
+import PictureList from '../components/PictureList';
+// api + hook
 import Unsplash from '../api/unsplash';
 
 const HomeScreen = () => {
@@ -12,9 +14,10 @@ const HomeScreen = () => {
       <SearchBar
         term={term}
         onTermChange={setTerm}
-        onTermSubmit={() => console.log(term)}
+        onTermSubmit={() => searchApi(term)}
       />
       <Text>{results.length}</Text>
+      <PictureList result={results} />
     </View>
   );
 };
