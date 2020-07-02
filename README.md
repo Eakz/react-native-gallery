@@ -3,11 +3,6 @@ DEVSTEAM.mobi interview assignment
 BASIC interview assignment.
 Тестовое задание:
 Реализовать галерею на базе React-Native (не React.js) которая будет отображать фотографии из unsplash. Это приложение должно извлекать ресурс в формате JSON.
-Документация REST API :
-[unsplash com/documentation]
-
-Токен к API моно получить или использовать следующие:  [api unsplash com/photos/?client_id=cf49c08b444ff4cb9e4d126b7e9f7513ba1ee58de7906e4360afc1a33d1bf4c0] , ab3411e4ac868c2646c0ed488dfd919ef612b04c264f3374c97fff98ed253dc9 или 896d4f52c589547b2134bd75ed48742db637fa51810b49b607e37e46ab2c0043
-
 Приложение должно содержать два экрана(страницы):
 * Список
 - мини изображение с названием и автором
@@ -16,3 +11,35 @@ BASIC interview assignment.
 - отображает одну фотографию с максимальной площадью.
 
 Предпочтительнее инициировать приложение через React Native CLI с помощью команды - react-native init TestApp, нежели чем через команду - create-react-native-app, если ресурсы вашего компьютера позволяют.
+
+
+Внешний вид:
+![Screenshot1](https://imgur.com/a/dbkWUZd)
+![Screenshot2](https://imgur.com/a/7NhexCa)
+
+
+
+Summary: Задание пришло на почту 29/07/2020 в 13:30. К сожалению приступить к работе получилось лишь на следующий день. Среди перечисленных технологий.
+
+
+Необходимые к применению технологии:
+* React-Native
+* Redux + Async Redux library (redux-thunk, redux-saga, e.g.)
+* es6 (JS)
+* Flexbox
+* React Navigation [facebook github io/react-native/docs/navigation.html#react-navigation]
+* fetch [developer mozilla org/en-US/docs/Web/API/Fetch_API/Using_Fetch]
+Предлагаемые к применению технологии:
+* Hooks
+* компоненты высшего порядка (High Order Components)
+* render props
+* ref
+
+
+Я имел опыт лишь с Flexbox, es6 и ReactJS(тоесть частично React Native). Работа с API не нова, поэтому я сразу знал как это должно делаться(https://github.com/Eakz/codecademy_react - два учебных проекта на ReactJS - один с использованием Классовых компонентов, Другой с использованием функциональных компонентов и хуков).
+
+Итого затрачено:
+2 дня(неполных) - ознакомление с ReactNative, его синтаксисом и конвенциями
+2 часа - переход с ExpoCLI+PhysicalDevice на React-Native init APP + AndroidStudioEmulator...Да, было больно
+3 часа - написание версии без Redux![Gitlog](https://imgur.com/a/lpbd2jM)
+Версия с Redux и OAuth2 в разработке.
