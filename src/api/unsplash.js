@@ -1,6 +1,4 @@
 import {useEffect, useState} from 'react';
-
-import fetch from 'isomorphic-fetch';
 const token = 'LxxnGmngRmOMt3UWBLFO-6u7WOjKY0_YqM2rKLX9PLA';
 export default () => {
   const [results, setResults] = useState([]);

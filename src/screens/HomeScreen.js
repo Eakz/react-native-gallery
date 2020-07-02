@@ -16,7 +16,7 @@ const HomeScreen = () => {
         onTermChange={setTerm}
         onTermSubmit={() => searchApi(term)}
       />
-      <Text>{results.length}</Text>
+      {errorMessage ? <Text>{errorMessage}</Text> : null}
       <PictureList result={results} />
     </View>
   );

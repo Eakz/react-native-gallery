@@ -1,8 +1,8 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet} from 'react-native';
+import {View, Text, Image, StyleSheet, TouchableHighlight} from 'react-native';
 
 const PictureElement = ({item}) => {
-    const formattedDate = new Date(item.created_at).toDateString();
+  const formattedDate = new Date(item.created_at).toDateString();
   return (
     <View style={styles.container}>
       <Image style={styles.imageStyle} source={{uri: item.urls.small}} />
@@ -15,18 +15,19 @@ const PictureElement = ({item}) => {
 const styles = StyleSheet.create({
   container: {
     height: 180,
-    width:180,
-    backgroundColor:'#ccc',
-    margin:10
+    width: 180,
+    backgroundColor: '#ccc',
+    margin: 10,
+    borderRadius: 5,
   },
   imageStyle: {
     height: '100%',
     width: '100%',
-    flex:1
+    flex: 1,
   },
-  textStyle:{
-      textAlign:'center'
-  }
+  textStyle: {
+    textAlign: 'center',
+  },
 });
 
 export default PictureElement;
