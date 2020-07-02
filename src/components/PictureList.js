@@ -1,19 +1,19 @@
 import React from 'react';
 import {Text, View, StyleSheet, FlatList, Image} from 'react-native';
+import PictureElement from './PictureElement';
 
 const PictureList = ({result}) => {
   return (
     <View>
       <FlatList
+      style={styles.list}
+        numColumns={2}
         data={result}
         renderItem={item => {
           return (
             <View>
               <Text>{item.index}</Text>
-              <Image
-                style={styles.imageStyle}
-                source={{uri: item.item.urls.small}}
-              />
+                <PictureElement item={item.item}/>
             </View>
           );
         }}
@@ -24,10 +24,9 @@ const PictureList = ({result}) => {
 };
 
 const styles = StyleSheet.create({
-  imageStyle: {
-    height: 55,
-    width: 55,
-  },
+    list:{
+        backgroundColor:'#fff'
+    }
 });
 
 export default PictureList;
