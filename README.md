@@ -14,8 +14,11 @@ BASIC interview assignment.
 
 
 Внешний вид:
-![Alt Screenshot1](https://imgur.com/a/dbkWUZd)
-![Alt Screenshot2](https://imgur.com/a/7NhexCa)
+
+![Alt Screenshot1](test_1.png)
+
+
+![Alt Screenshot2](test_2.png)
 
 
 
@@ -41,5 +44,10 @@ Summary: Задание пришло на почту 29/07/2020 в 13:30. К с�
 Итого затрачено:
 2 дня(неполных) - ознакомление с ReactNative, его синтаксисом и конвенциями
 2 часа - переход с ExpoCLI+PhysicalDevice на React-Native init APP + AndroidStudioEmulator...Да, было больно
-3 часа - написание версии без Redux![Alt Gitlog](https://imgur.com/a/lpbd2jM)
+3 часа - написание версии без Redux
+
+
+![Alt Gitlog](git_log.png)
+
+
 Версия с Redux и OAuth2 в разработке.
