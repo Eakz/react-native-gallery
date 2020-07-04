@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
-import {url, token} from '../api/unsplashApi';
+import UNSPLASH from '../api/unsplashApi';
+const {url, token} = UNSPLASH;
 
 export default () => {
   const [results, setResults] = useState([]);

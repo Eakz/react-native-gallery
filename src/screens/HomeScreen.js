@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Text, StyleSheet, View} from 'react-native';
+import {Text, StyleSheet, View, ScrollView} from 'react-native';
 import SearchBar from '../components/SearchBar';
 import PictureList from '../components/PictureList';
 // hook
@@ -10,18 +10,28 @@ const HomeScreen = () => {
   const [searchApi, results, errorMessage] = Unsplash();
 
   return (
-    <View>
+    <View style={{flex: 5}}>
       <SearchBar
         term={term}
         onTermChange={setTerm}
         onTermSubmit={() => searchApi(term)}
       />
+
       {errorMessage ? <Text>{errorMessage}</Text> : null}
-      <PictureList result={results} />
+      <ScrollView>
+        <PictureList result={results} />
+        <Text style={styles.footer}>Display - {results.length} imgs</Text>
+      </ScrollView>
     </View>
   );
 };
 const styles = StyleSheet.create({
-  container: {},
+  footer: {
+    backgroundColor: '#000',
+    color: '#ccc',
+    textAlign: 'center',
+    fontSize: 18,
+    paddingVertical: 5,
+  },
 });
 export default HomeScreen;
